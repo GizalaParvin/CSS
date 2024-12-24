@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+
+}
+html body{
+    width: 10%;
+    height: 10;
+
+}
+#main{
+    width: 10%;
+    min-height: 10;
+
+}
+.top{
+    width: 10%;
+    min-height: 60vh;
+    background-image: url(https://in.images.search.yahoo.com/search/images;_ylt=AwrKB1KTfqtmi7cz0cW7HAx.;_ylu=Y29sbwNzZzMEcG9zAzEEdnRpZAMEc2VjA3BpdnM-?p=nature+images&fr2=piv-web&type=E211IN1589G0&fr=mcafee#id=0&iurl=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F443446%2Fpexels-photo-443446.jpeg%3Fcs%3Dsrgb%26dl%3Ddaylight-forest-glossy-443446.jpg%26fm%3Djpg&action=click);
+
+
+    background-size: cover;
+    background-position: center;
+}
+.top .overlay{
+    position: relative;
+    width: 10%;
+    min-height: inherit;
+    background-color: rgb(84, 36, 114);
+    
+}
+#text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    padding: 0 10vh;
+    color: white;
+    bottom: 5%;
+}
+.text h1{
+    font-weight: 600;
+    font-size: 4vw;
+
+}
+.text .image{
+    background-image:url(https://in.images.search.yahoo.com/search/images;_ylt=AwrKAu7Mk6tmq3M2gA67HAx.;_ylu=Y29sbwNzZzMEcG9zAzEEdnRpZAMEc2VjA3BpdnM-?p=image&fr2=piv-web&type=E211IN1589G0&fr=mcafee#id=6&iurl=https%3A%2F%2Fpixy.org%2Fsrc%2F477%2F4774988.jpg&action=click);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 220px;
+}
+#rtext{
+    display: flex;
+    width: 25%;
+    align-items: center;
+    justify-content: space-between;
+}
+.rtext p{
+    font-size: 12px;
+
+
+}
+.bottom{
+    display: flex;
+    width:100%;
+    min-height: 40vh;
+
+}
+.b1{
+    width: 30%;
+    min-height: inherit;
+    background-image: url('img_girl.jpg');    
+
+
+}
+.b2{
+    width: 30%;
+    min-height: inherit;
+    background-image:url(https://pixabay.com/photos/tree-sunset-clouds-sky-silhouette-736885/);
+    background-size:cover;
+
+}
+    
+.b3{
+    width: 30%;
+    min-height: inherit;
+    background-image: url("img_tree.gif"), url("paper.gif");
+
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* .box:first-child{
+            background-color: blueviolet;
+
+        } */
+        /* .box::first-line{
+            color: rgb(157, 0, 255);
+
+        } */
+        /* .boxex *{
+            color: blueviolet;
+            border: 2px solid black ;
+         }
+        [data-color="primary"]{
+            padding-top: 45px ;
+        }
+        .box:nth-child(even){
+            background-color: black;
+
+        }
+        .box:nth-last-child{
+            background-color: blueviolet;
+        } */
+        .boxex::before{
+            content: "gizala is nice girl";
+            color:blueviolet;
+            
+        }
+        .boxex::after{
+            content: "gizala is nice girl";
+            color:rgb(43, 226, 211)
+        }
+        .box::first-letter{
+            color:peru;
+            font-size: 45px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="boxex">
+        <div class ="box">I am first box</div>
+        <div class ="box">Hey i am box</div>
+        <div class ="box">Hey i am box</div>
+        <input type="text"
+    </div>
+    
+</body>
+</html>

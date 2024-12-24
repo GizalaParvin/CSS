@@ -1,0 +1,54 @@
+/* p{
+    color: rgb(0, 247, 255);
+}
+a{
+    color: brown;
+}
+
+li{
+    list-style-type: square;
+}
+.special{
+    color: orange;
+    font-weight: bold;
+} */
+
+
+span.special,li.special{
+    color: rgb(255, 0, 217);
+}
+li em{
+    color: blueviolet;
+}
+
+h1 + p{
+    font-size: 200%;
+}
+
+a:hover{
+    color: saddlebrown;
+    text-decoration: dotted;
+}
+body h1 + p .special{
+    color:rgb(0, 174, 255);
+    background-color:black;
+    padding: 5px;
+}
+
+
+#heading{
+    color: red;
+    background-color: black;
+}
+
+p#one {
+    color: aquamarine;
+}
+
+li[class]{
+    font-size: 300%;
+}
+
+li[class~="a"]{
+    color: red;
+}
