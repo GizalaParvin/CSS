@@ -74,6 +74,89 @@ Text Shadow: Adds shadow to text.
 
     Projects
 
+CSS Layouts
+
+Flexbox
+
+What it is: A layout module that provides a flexible way to align and distribute space.
+
+Key Properties: display: flex, justify-content, align-items, flex-direction.
+
+
+       .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+     }
+
+Grid
+
+What it is: A powerful 2D layout system.
+
+Key Properties: display: grid, grid-template-columns, grid-template-rows, gap.
+
+      .grid {
+       display: grid;
+        grid-template-columns: repeat(3, 1fr);
+         gap: 20px;
+      }
+
+CSS Layouts
+
+Flexbox
+
+What it is: A layout module that provides a flexible way to align and distribute space.
+
+Key Properties: display: flex, justify-content, align-items, flex-direction.
+
+            .container {
+                display: flex;
+                 justify-content: center;
+                 align-items: center;
+                 height: 100vh;
+         }
+
+CSS Effects
+
+Hover Effects
+
+What it is: Style changes when the user hovers over an element.
+
+Examples: Button hover, image hover zoom.
+
+    .button:hover {
+       background-color: #4CAF50;
+         color: white;
+      }
+Navigation Bars
+
+Description: Create responsive and stylish navbars using Flexbox or Grid.
+
+     <nav class="navbar">
+       <ul>
+          <li><a href="#">Home</a></li>
+           <li><a href="#">About</a></li>
+           <li><a href="#">Contact</a></li>
+       </ul>
+    </nav>
+
+    <style>
+      .navbar {
+            display: flex;
+            justify-content: space-around;
+            background-color: #333;
+            padding: 10px;
+       }
+           .navbar a {
+            color: white;
+            text-decoration: none;
+       }
+            .navbar a:hover {
+            text-decoration: underline;
+         }
+           </style>  
+
 1. CSS Calculator
 
 A simple calculator designed with CSS for buttons and layout.
