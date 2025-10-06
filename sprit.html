@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Sprite Example</title>
+  <style>
+    .icon {
+      display: inline-block;
+      width: 40px;     /* width of one icon */
+      height: 40px;    /* height of one icon */
+      background-image: url('https://img.icons8.com/?size=100&id=13912&format=png&color=000000'); /* your sprite image */
+      margin: 10px;
+    }
+
+    .facebook {
+      background-position: 0 0;
+    }
+
+    .instagram {
+      background-position: -40px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>CSS Sprite Demo</h2>
+
+  <!-- Facebook -->
+  <div class="icon facebook"></div>
+
+  <!-- Instagram -->
+  <div class="icon instagram"></div>
+
+</body>
+</html>

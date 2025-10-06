@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Image Map Example</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    #infoBox {
+      margin-top: 20px;
+      padding: 10px;
+      border: 1px solid #333;
+      border-radius: 6px;
+      min-height: 50px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Image Map with Hotspots</h1>
+  <p>Click on the marked areas of the map to see information.</p>
+
+  <!-- The image -->
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/World_map_-_low_resolution.svg/800px-World_map_-_low_resolution.svg.png" 
+       usemap="#worldmap" alt="World Map">
+
+  <!-- Define clickable hotspots -->
+  <map name="worldmap">
+    <area shape="rect" coords="80,50,200,180" href="#" alt="North America"
+          onclick="showInfo('North America', 'Major Cities: New York, Los Angeles');">
+    <area shape="circle" coords="420,100,50" href="#" alt="Europe"
+          onclick="showInfo('Europe', 'Major Cities: London, Paris');">
+    <area shape="poly" coords="280,300,350,350,300,420,230,380" href="#" alt="South America"
+          onclick="showInfo('South America', 'Major Cities: Sao Paulo, Buenos Aires');">
+  </map>
+
+  <!-- Box to show info -->
+  <div id="infoBox">Click on a hotspot to see details here.</div>
+
+  <script>
+    function showInfo(region, details) {
+      document.getElementById("infoBox").innerHTML =
+        "<h3>" + region + "</h3><p>" + details + "</p>";
+    }
+  </script>
+</body>
+</html>

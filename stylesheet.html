@@ -1,0 +1,52 @@
+**index.html**
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Styling Example</title>
+
+    <!-- Internal CSS -->
+    <style>
+        body {
+            background-color: #f4f4f9;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: darkblue;
+            text-align: center;
+        }
+        p {
+            color: darkslategray;
+            font-size: 18px;
+        }
+    </style>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Welcome to CSS Styling Demo</h1>
+
+    <!-- Inline CSS -->
+    <h2 style="color: green; font-size: 22px;">This is styled with Inline CSS</h2>
+
+    <p>This paragraph is styled with Internal CSS.</p>
+    <p class="external-text">This paragraph is styled with External CSS.</p>
+</body>
+</html>
+```
+
+<!-- **style.css** (External stylesheet)
+
+css
+.external-text {
+    color: crimson;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+ -->
+
+

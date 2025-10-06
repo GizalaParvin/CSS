@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auth Demo</title>
+  <style>
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #4e54c8, #8f94fb);
+      margin: 0;
+    }
+
+    .container {
+      width: 350px;
+      padding: 2rem;
+      border-radius: 15px;
+      backdrop-filter: blur(10px);
+      background: rgba(255,255,255,0.15);
+      color: #fff;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+      text-align: center;
+    }
+
+    h2 { margin-bottom: 1rem; }
+
+    .input-box { margin-bottom: 1rem; text-align: left; }
+    .input-box label { display: block; margin-bottom: 0.3rem; font-size: 14px; }
+    .input-box input {
+      width: 100%; padding: 10px; border-radius: 8px; border: none; outline: none;
+    }
+
+    .btn {
+      width: 100%; padding: 12px; border: none; border-radius: 8px;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: #fff; font-size: 16px; font-weight: bold; cursor: pointer;
+    }
+
+    .link { margin-top: 10px; display: block; color: #ffd700; text-decoration: none; }
+
+    section { display: none; }
+    section:target { display: block; }
+    #login { display: block; } /* default */
+  </style>
+</head>
+<body>
+
+  <!-- 🔹 Register Section -->
+  <section id="register">
+    <div class="container">
+      <h2>📝 Register</h2>
+      <!-- Redirects to portfolio -->
+      <form action="http://127.0.0.1:3000/index.html" method="get">
+        <div class="input-box">
+          <label for="newUser">Username</label>
+          <input type="text" id="newUser" required>
+        </div>
+        <div class="input-box">
+          <label for="newPass">Password</label>
+          <input type="password" id="newPass" required>
+        </div>
+        <button type="submit" class="btn">Register</button>
+      </form>
+      <a href="#login" class="link">Already registered? Login</a>
+    </div>
+  </section>
+
+  <!-- 🔹 Login Section -->
+  <section id="login">
+    <div class="container">
+      <h2>🔑 Login</h2>
+      <!-- Redirects to portfolio -->
+      <form action="http://127.0.0.1:3000/index.html" method="get">
+        <div class="input-box">
+          <label for="username">Username</label>
+          <input type="text" id="username" required>
+        </div>
+        <div class="input-box">
+          <label for="password">Password</label>
+          <input type="password" id="password" required>
+        </div>
+        <button type="submit" class="btn">Login</button>
+      </form>
+      <a href="#register" class="link">New user? Register</a>
+    </div>
+  </section>
+
+</body>
+</html>
