@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Simple HTML-only Todo List</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    /* Minimal styling (still inside the single HTML file) */
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: #f6f7fb;
+      margin: 0;
+      padding: 36px;
+      display:flex;
+      justify-content:center;
+    }
+    .app {
+      width: 100%;
+      max-width: 640px;
+      background:white;
+      border-radius:12px;
+      box-shadow: 0 8px 30px rgba(20,20,40,0.08);
+      padding:24px;
+    }
+    h1 { margin: 0 0 12px 0; font-size:1.4rem; }
+    p.hint { margin:0 0 18px 0; color:#666; font-size:0.95rem; }
+    ul { list-style:none; padding:0; margin:0; }
+    li {
+      display:flex;
+      align-items:center;
+      padding:10px;
+      border-radius:8px;
+      gap:12px;
+      margin-bottom:8px;
+      transition: background .15s;
+    }
+    li:hover { background:#fbfbfd; }
+    input[type="checkbox"] { width:18px; height:18px; }
+    label.task {
+      flex:1;
+      outline: none;
+      cursor:text;
+      user-select:text;
+    }
+    label.task[contenteditable="true"]:empty::before {
+      content: "Type a new task here...";
+      color: #bbb;
+    }
+    .done label.task {
+      text-decoration: line-through;
+      color:#999;
+    }
+
+    .controls {
+      display:flex;
+      gap:8px;
+      margin-top:16px;
+    }
+    /* "buttons" that are really links (no JS) */
+    .btn {
+      display:inline-block;
+      padding:8px 12px;
+      border-radius:8px;
+      background:#0b74de;
+      color:white;
+      text-decoration:none;
+      font-weight:600;
+      font-size:0.95rem;
+    }
+    .btn.ghost { background:transparent; color:#0b74de; border:1px solid rgba(11,116,222,0.12); }
+    .small { font-size:0.8rem; padding:6px 8px; border-radius:6px; }
+    footer { margin-top:18px; color:#777; font-size:0.85rem; }
+  </style>
+</head>
+<body>
+  <main class="app" role="main" aria-labelledby="title">
+    <h1 id="title">My Todo List (HTML only)</h1>
+    <p class="hint">Click a task text to edit it. Toggle checkboxes to mark done. Add a task by editing the blank line at the bottom. Changes won't persist after you reload the page (no JavaScript/server).</p>
+
+    <ul id="todos" aria-live="polite">
+      <!-- Example tasks -->
+      <li>
+        <input type="checkbox" id="t1" />
+        <label for="t1" class="task" contenteditable="true">Study for computer networks exam</label>
+      </li>
+
+      <li>
+        <input type="checkbox" id="t2" />
+        <label for="t2" class="task" contenteditable="true">Finish data-visualization assignment</label>
+      </li>
+
+      <li>
+        <input type="checkbox" id="t3" />
+        <label for="t3" class="task" contenteditable="true">Buy groceries</label>
+      </li>
+
+      <!-- Blank editable row for adding new tasks (user can type here) -->
+      <li>
+        <input type="checkbox" id="new" />
+        <label for="new" class="task" contenteditable="true"></label>
+      </li>
+    </ul>
+
+    <div class="controls" aria-hidden="true">
+      <!-- Buttons are decorative (no JS). They can be used to jump to top or refresh (reload) -->
+      <a class="btn" href="#title">Top</a>
+      <a class="btn ghost" href="">Reload</a>
+    </div>
+
+    <footer>
+      Tip: to keep your list between sessions, save a copy of the file after editing (File → Save As) or copy the list into a notes file. 
+    </footer>
+  </main>
+
+</body>
+</html>
